@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body onload="myFunction()">
+
+<p>Click anywhere in the document to display the active element.</p>
+<input type="text" value="An input field">
+<button>A Button</button>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur praesentium corrupti numquam! Repellat maxime quos nobis vitae, quasi delectus praesentium dicta sequi provident natus quo molestiae aliquam saepe doloribus animi!</p>
+
+
+
+<a href="#p" action = acti>
+    <p id="pemo"></p>
+</a>
+<p id="demo"></p>
+<p id="lemo"></p>
+
+
+<script>
+function myFunction() {
+  var x = document.activeElement.tagName;
+  //document.getElementById("demo").innerHTML = x;
+  //document.getElementById("demo").innerHTML = "nei";
+  //document.getElementById("pemo").innerHTML = x;
+  document.getElementById("pemo").innerHTML = "The full URL of this page is:<br>" + window.location.href;
+  document.getElementById("demo").innerHTML = "The host of this page is:<br>" + window.location.host;
+  document.getElementById("lemo").innerHTML = "The hash part of URL of this page is:<br>" + window.location.hash;
+}
+</script>
+
+</body>
+</html>
